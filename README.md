@@ -12,7 +12,7 @@
 
 - **E-Mail：**3379328034@qq.com
 
-- **GitHub：**[https://github.com/](https://github.com/lineits)
+- **GitHub：**[lineits](https://github.com/lineits)
 
 - 个人站点：
 
