@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+     <meta charset="utf-8">
+     <title>wiki</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+     <meta name="author" content="Lin e">
+     <meta name="description" content="个人wiki站，收集、整理、提炼所学的知识">
+     <meta name="keywords" content="wiki,docsify,音乐爱好者"/>
+     <meta name="robots" content="index,follow">
+     <meta name="renderer" content="webkit"/>
+     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
+</head>
+  <body>
+     <div id="app"><!--<p>Loading...</p>-->
+            <img src="assets/img/Loading.gif" width=128>
+        </div>
+     <script>
+     window.$docsify = {
+        name: 'wiki-nav 📝',
+        nameLink: '/',
+        //basePath: '/dome/',
+        loadNavbar: true,  //加载自定义导航栏，需要目录下有_navbar.md文件
+        //loadSidebar: true,  //开启侧边栏，需要目录下有_sidebar.md文件
+        hideSidebar: true,  //完全隐藏侧边栏，任何内容都不会被渲染。
+        //autoHeader: true,  //根据侧边栏自动为每个页面增加标题
+        auto2top: true,  //切换页面后跳回页面顶部
+        //maxLevel: 1,    //抓取文档中所有标题渲染成目录，最大渲染n级
+        //subMaxLevel: 1,  //显示文章的目录：数字为显示目录的级数
+        externalLinkTarget: '_blank',  //设置是在新窗口打开链接目标
+        homepage: 'readme.md',  //指定开始页
+        notFoundPage: '_404.md',  //自定义404页面
+        ext: '.md',  //设置请求文件扩展名
+        //mergeNavbar: true,  //小屏设备合并导航栏到侧边栏
+        //logo: './icon_32.svg',  //logo 和 name 二选一
+        search: {
+            maxAge: 86400000,
+            hideOtherSidebarContent: true,
+            namespace: 'website-1',
+            paths: 'auto',
+            placeholder: '🔍 搜索',
+            noData: '呀！换个词试试 😒'
+        },
+        progress: {
+            position: "top",
+            color: "var(--theme-color,#00ffff)",
+            height: "3px",
+        },
+        copyCode: {
+            buttonText: '复制到剪贴板',
+            errorText: '错误',
+            successText: '复制成功'
+        },
+        'flexible-alerts': {
+            style: 'flat',
+            note: {
+                label: "信息"
+            },
+            tip: {
+                label: "提示"
+            },
+            warning: {
+                label: "注意"
+            },
+            attention: {
+                label: "切记"
+            }
+        },
+        repo:'true',
+            corner: {
+            url: "https://github.com",
+            icon: "assets/img/2233.gif",
+            width: 45,
+            height: 45
+        },
+    }
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-corner@latest/dist/docsify-corner.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script src="//unpkg.com/docsify-copy-code"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-progress/dist/progress.min.js"></script>
+    <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/EchoHeim/Astapb/docs/js/click_heart.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/Sumsung524/docsify-backTop/dist/docsify-backTop.min.js"></script>
+    <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('assets/sw.js')
+  }
+</script>
+  </body>
+</html>
